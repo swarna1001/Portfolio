@@ -1,52 +1,28 @@
 <!doctype html>
 <html lang="en">
+{% load static %}
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'about/style.css'%}">
 
-    <title>About Me</title>
-
+    <title>about</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-        }
-
-    .sidebar {
-        position: fixed;
-        left: 0;
-        width: 200px;
-        height: 100%;
-        background: #042331;
-        }
-
-    .sidebar ul a {
-        display: block;
-        height: 100%;
-        width: 100%;
-        line-height: 65px;
-        font-size: 20px;
-        color: white;
-        padding-left: 50px;
-        text-decoration: none;
-        box-sizing: border-box;
-        border-top: 1px solid rgba(255, 255, 255, .1);
-        border-bottom: 1px solid black;
-        }
-
-    ul li a:hover{
-        color: rgb(132, 136, 190);
-        }
-
-
+        body {background-color: #010820;}
     </style>
+
 </head>
 <body>
 
+<input type="checkbox" id="check">
+<label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+
+</label>
 <div class="sidebar">
     <ul>
         <li><a href=""><i class="fas fa-home" ></i> Home </a></li>
@@ -54,9 +30,9 @@
         <li><a href="writings"><i class="fas fa-newspaper"></i> Writings</a></li>
         <li><a href="about"> <i class="far fa-question-circle"></i> About Me</a></li>
     </ul>
+
 </div>
 
-<h1> About me!</h1>
 
 </body>
 </html>

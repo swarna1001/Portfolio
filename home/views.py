@@ -17,13 +17,4 @@ def project(request):
 
 
 def writings(request):
-    if request.method == "POST":
-        name = request.POST['name']
-        email = request.POST['email']
-        desc = request.POST['desc']
-
-        save_contact = Contact(name=name, email=email, desc=desc)
-        save_contact.save()
-        print("the data has been entered in the db!")
-
     return render(request, 'writings.html')
